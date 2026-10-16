@@ -1,0 +1,413 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MyPatientHUB - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard">
+
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <h2>MyPatientHUB</h2>
+
+            </div>
+
+
+            <nav class="menu">
+
+                <!-- Dashboard -->
+                <a href="dashboard.html" class="active">
+                    🏠
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- Appointments -->
+                <a href="#">
+                    📅
+                    <span>Appointments</span>
+                </a>
+
+
+                <!-- Find Doctor -->
+                <a href="find Doctor.html">
+                    👨‍⚕️
+                    <span>Find Doctor</span>
+                </a>
+
+
+                <!-- Find Clinic -->
+                <a href="find clinic.html">
+                    🏥
+                    <span>Find Clinic</span>
+                </a>
+
+
+                <!-- Chat -->
+                <a href="#">
+                    💬
+                    <span>Chat</span>
+                </a>
+
+
+                <!-- Marketplace -->
+                <a href="#">
+                    🛒
+                    <span>Find Marketplace</span>
+                </a>
+
+
+                <!-- Pharmacy -->
+                <a href="#">
+                    💊
+                    <span>Find Pharmacy</span>
+                </a>
+
+
+                <!-- Dependents -->
+                <a href="#">
+                    👥
+                    <span>My Dependents</span>
+                </a>
+
+
+                <!-- Account -->
+                <a href="#">
+                    👤
+                    <span>My Account</span>
+                </a>
+
+
+                <!-- Settings -->
+                <a href="#">
+                    ⚙️
+                    <span>Settings</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <main class="main-content">
+
+
+            <!-- TOP BAR -->
+
+            <header class="topbar">
+
+                <div>
+
+                    <p>
+                        🏠
+                        &nbsp;/&nbsp;
+                        Dashboard
+                    </p>
+
+                    <h3>
+                        Dashboard
+                    </h3>
+
+                </div>
+
+
+                <div class="top-actions">
+
+
+                    <!-- Search -->
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Type here..."
+                    >
+
+
+                    <!-- Language -->
+                    <span>
+                        🌐
+                    </span>
+
+
+                    <!-- Logout -->
+                    <a href="index.html">
+                        Log Out
+                    </a>
+
+
+                    <!-- Settings -->
+                    <span>
+                        ⚙️
+                    </span>
+
+
+                    <!-- Notification -->
+                    <span>
+                        🔔
+                    </span>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =========================
+                 DASHBOARD CONTENT
+            ========================== -->
+
+            <section class="content">
+
+
+                <!-- Welcome -->
+
+                <h1 id="welcomeTitle">
+                    Welcome To MyPatientHUB!
+                </h1>
+
+
+
+                <!-- =========================
+                     CARDS
+                ========================== -->
+
+                <div class="cards">
+
+
+                    <!-- =====================
+                         CLINIC CARD
+                    ====================== -->
+
+                    <div class="card">
+
+                        <h3>
+                            Promotion by Clinics
+                        </h3>
+
+
+                        <div class="card-body">
+
+
+                            <img
+                                src="images/clinic.jpeg"
+                                alt="Clinic chart"
+                                class="chart-image"
+                            >
+
+
+                            <div class="list">
+
+                                <p>
+                                    Klinik Lee Healthcare
+                                    <span>19%</span>
+                                </p>
+
+                                <p>
+                                    Klinik Bandar Baru Nilai
+                                    <span>4%</span>
+                                </p>
+
+                                <p>
+                                    Klinik Mediviron Giant Nilai
+                                    <span>10%</span>
+                                </p>
+
+                                <p>
+                                    KLINIK NILAI IMPIAN
+                                    <span>21%</span>
+                                </p>
+
+                                <p>
+                                    Klinik Mediviron
+                                    <span>2%</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <button>
+                            MORE DETAILS
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- =====================
+                         PHARMACY CARD
+                    ====================== -->
+
+                    <div class="card">
+
+                        <h3>
+                            Promotion by Pharmacies
+                        </h3>
+
+
+                        <div class="card-body">
+
+
+                            <img
+                                src="images/pharmacy.jpeg"
+                                alt="Pharmacy chart"
+                                class="chart-image"
+                            >
+
+
+                            <div class="list">
+
+                                <p>
+                                    ALPRO PHARMACY NILAI
+                                    <span>15%</span>
+                                </p>
+
+                                <p>
+                                    ALPRO PHARMACY PEKAN NILAI
+                                    <span>12%</span>
+                                </p>
+
+                                <p>
+                                    OK PHARMACY
+                                    <span>5%</span>
+                                </p>
+
+                                <p>
+                                    PHARMART PHARMACY NILAI
+                                    <span>9%</span>
+                                </p>
+
+                                <p>
+                                    Health Lane Family Pharmacy
+                                    <span>14%</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <button>
+                            MORE DETAILS
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- =====================
+                         MARKET CARD
+                    ====================== -->
+
+                    <div class="card">
+
+                        <h3>
+                            Smart Market Usage by App
+                        </h3>
+
+
+                        <div class="card-body">
+
+
+                            <img
+                                src="images/market.jpeg"
+                                alt="Market chart"
+                                class="chart-image"
+                            >
+
+
+                            <div class="list">
+
+                                <p>
+                                    Food Panda
+                                    <span>25%</span>
+                                </p>
+
+                                <p>
+                                    Grab Food
+                                    <span>3%</span>
+                                </p>
+
+                                <p>
+                                    Other Apps
+                                    <span>12%</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =====================
+                         HEALTH INDEX CARD
+                    ====================== -->
+
+                    <div class="card health-card">
+
+                        <h3>
+                            Health Index
+                        </h3>
+
+
+                        <div class="health-number">
+                            70%
+                        </div>
+
+
+                        <p class="increase">
+                            +3%
+                        </p>
+
+
+                        <div class="health-chart">
+
+                            <div class="line"></div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>
+```

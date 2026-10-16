@@ -1,0 +1,420 @@
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f6f8;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: white;
+    border-right: 1px solid #e5e7eb;
+    padding: 25px 15px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.logo {
+    text-align: center;
+    padding: 10px 0 30px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo h2 {
+    color: #33415c;
+    font-size: 20px;
+}
+
+/* Menu */
+.menu {
+    margin-top: 20px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 50px;
+    padding: 0 15px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    color: #687386;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    background: #f2f3f8;
+}
+
+.menu a.active {
+    background: #f7f7fa;
+    color: #333d55;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.menu a span:first-child {
+    font-size: 18px;
+}
+
+/* Main */
+.main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+}
+
+
+.topbar {
+    height: 105px;
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 35px;
+}
+
+.topbar p {
+    color: #9aa2af;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.topbar h3 {
+    color: #354158;
+    font-size: 20px;
+}
+
+.top-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: #4d596d;
+    font-size: 13px;
+}
+
+.top-actions input {
+    width: 190px;
+    height: 38px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0 15px;
+    outline: none;
+}
+
+.top-actions input:focus {
+    border-color: #888;
+}
+
+/* Content */
+.content {
+    padding: 30px;
+}
+
+.content h1 {
+    color: #354158;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    min-height: 330px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+    color: #536176;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+
+.circle::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.clinic-circle {
+    background: conic-gradient(
+        #ec008c 0deg 120deg,
+        #2868e8 120deg 160deg,
+        #f5bd20 160deg 220deg,
+        #16ad48 220deg 340deg,
+        #354158 340deg 360deg
+    );
+}
+
+/* Pharmacy chart */
+.pharmacy-circle {
+    background: conic-gradient(
+        #2868e8 0deg 100deg,
+        #aebbd4 100deg 175deg,
+        #ec008c 175deg 215deg,
+        #16ad48 215deg 270deg,
+        #354158 270deg 360deg
+    );
+}
+
+/* Market chart */
+.market-circle {
+    background: conic-gradient(
+        #354158 0deg 90deg,
+        #aebbd4 90deg 190deg,
+        #16ad48 190deg 250deg,
+        #2868e8 250deg 360deg
+    );
+}
+
+/* List */
+.list {
+    flex: 1;
+}
+
+.list p {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eeeeee;
+    color: #5d687a;
+    font-size: 12px;
+}
+
+.list span {
+    color: #8993a3;
+    font-weight: bold;
+}
+
+/* More details */
+.card > button {
+    margin-top: 20px;
+    margin-left: 45px;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 8px;
+    background: #aebdd8;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card > button:hover {
+    opacity: 0.85;
+}
+
+/* Health Index */
+.health-card {
+    position: relative;
+}
+
+.health-number {
+    font-size: 25px;
+    font-weight: bold;
+    color: #354158;
+    display: inline-block;
+}
+
+.increase {
+    display: inline-block;
+    margin-left: 8px;
+    color: #62b83d;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.health-line {
+    height: 100px;
+    margin-top: 45px;
+    border-top: 3px solid #7c8799;
+    border-radius: 50%;
+    transform: rotate(-3deg);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card-body {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        width: 190px;
+    }
+
+    .main-content {
+        margin-left: 190px;
+        width: calc(100% - 190px);
+    }
+
+    .topbar {
+        padding: 0 15px;
+    }
+
+    .top-actions {
+        gap: 8px;
+    }
+
+    .top-actions input {
+        width: 120px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
+
+.chart-image {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.health-chart {
+    width: 100%;
+    height: 120px;
+    margin-top: 35px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.line {
+    position: absolute;
+    width: 120%;
+    height: 70px;
+    left: -10%;
+    top: 25px;
+    border-top: 3px solid #697586;
+    border-radius: 50%;
+    transform: rotate(-4deg);
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 70px;
+        padding: 15px 8px;
+    }
+
+    .logo h2 {
+        font-size: 9px;
+    }
+
+    .menu a {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .menu a span {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 70px;
+        width: calc(100% - 70px);
+    }
+
+    .topbar {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .top-actions {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .top-actions input {
+        width: 100%;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .content h1 {
+        font-size: 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        height: auto;
+        min-height: 285px;
+    }
+
+    .card-body {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .chart-image {
+        margin: auto;
+    }
+}
+
+.login-image {
+  height: 365px;
+  border-radius: 8px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(63, 25, 104, .65),
+      rgba(4, 69, 105, .55),
+      rgba(145, 26, 89, .6)
+    ),
+    url("picture.jpeg") center/cover no-repeat;
+
+}
